@@ -26,7 +26,7 @@ app.use(cors())
 
 
 
-saveVideo(arrOfVideos)
+// saveVideo(arrOfVideos)
 
 app.use('/playlist', playlistRoutes)
 app.use('/notes', notesRoutes)
