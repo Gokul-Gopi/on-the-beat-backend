@@ -23,9 +23,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 
 
-
-
-
 // saveVideo(arrOfVideos)
 
 app.use('/playlist', playlistRoutes)

@@ -1,7 +1,7 @@
 const Video = require('./Models/video.model')
 const Category = require('./Models/category.model')
 const saveVideo = async (arr) => {
-    const categoryType = await Category.findOne({ name: 'Intermediate' })
+    const categoryType = await Category.findOne({ name: 'Pro' })
     let video;
 
     arr.map(async (videos) => {
@@ -22,55 +22,49 @@ const saveVideo = async (arr) => {
 
 const arrOfVideos = [
     {
-        name: 'Top 5 Things Every Intermediate Guitar Player Should Know',
-        videoID: 'yW1j4Bi1e0M',
+        name: 'Beethoven - Moonlight Sonata 3rd Movement Guitar Lesson part.1 With Tab (Slow teampo)',
+        videoID: 'tbHFliGGS4M',
         category: '',
-        date: 'Aug 18, 2015',
-        views: '1,602,316',
-        description: 'In this lesson you will learn all about my top 5 things every intermediate guitar player should know.',
-        channelName: 'YourGuitarSage',
-        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLTobLICedS6R1WpxKPZjofuz4sBnKNd_z7CPdoe9A=s88-c-k-c0x00ffffff-no-rj'
+        date: 'Sep 17, 2020',
+        views: '115,646',
+        description: 'Difficulty Level - Hard,Tunning - E A D G B E',
+        channelName: 'JW Easy guitar',
+        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLR_66ro2T0FNrxJbormy5JvOiS2xA2s6MUnKumx=s88-c-k-c0x00ffffff-no-rj'
     },
+
     {
-        name: 'Are you an intermediate guitar player? Here’s how to know.',
-        videoID: 'wAlB-71Jq4A',
+        name: 'John Mayer - Neon (Live In LA - 1080p)',
+        videoID: '_DfQC5qHhbo',
         category: '',
-        date: 'Jun 26, 2019',
-        views: '1,579,636',
-        description: 'Many guitar players have no idea how to know once they’ve successfully completed the “beginner” stage of playing guitar. When do you officially become an intermediate guitar player? In this guitar lesson, Nate Savage will answer that but going through a list of things you need to do successfully to call yourself a certified intermediate guitarist.',
-        channelName: 'Guitareo',
-        channelImage: 'https://yt3.ggpht.com/FDkZe_RckADi6N3t_P7lSWu5BWODi7qWuiczc7GCkb9mMO2Q3ByODIhIPUGR9s33JQdIi7Ut=s88-c-k-c0x00ffffff-no-rj'
+        date: 'Apr 17, 2012',
+        views: '12,331,562',
+        description: 'I do not own this song. It is used for entertainment purposes only.',
+        channelName: 'Paul Kellerman',
+        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLR_66ro2T0FNrxJbormy5JvOiS2xA2s6MUnKumx=s88-c-k-c0x00ffffff-no-rj'
     },
+
     {
-        name: 'Wake Me Up Guitar Tutorial - Avicii Guitar Lesson 🎸|100% Accurate Chords + Lead + No Capo + Cover|',
-        videoID: '_u4wlBmXGmw',
+        name: 'Sweet Child O Mine Solo - Guns N Roses - Acoustic Guitar Cover',
+        videoID: 'evsh1qa6eoc',
         category: '',
-        date: 'May 19, 2018',
-        views: '1,048,449',
-        description: 'Welcome to this Wake Me Up Guitar Tutorial by Avicii! After the sad and unfortunate passing of Tim Bergling I thought Id pay tribute with a lesson of perhaps his most popular song.',
-        channelName: 'GuitarZero2Hero',
-        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLR-T2izPEQL_n3ox_5IciRHBV7ZS2_EorhQSQyAnw=s88-c-k-c0x00ffffff-no-rj'
+        date: 'Oct 21, 2016',
+        views: '18,650,800',
+        description: 'This my acoustic version of the Sweet Child O Mine Solo by Guns N Roses.',
+        channelName: 'Acoustician',
+        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLTmyMwjYL7MVV_XQZZMUTxXh2HfFJsLfdfTFmTdaA=s88-c-k-c0x00ffffff-no-rj-mo'
     },
+
     {
-        name: 'Maroon 5 - Payphone | Fingerstyle Guitar Lesson (Tutorial) How to Play Fingerstyle',
-        videoID: '8WKTDgrdwUU&t=13s',
+        name: 'Advanced Chords Practice Routine - Guitar Lesson for Jazz, R&B, and Blues',
+        videoID: 'wH63GHXTHgU',
         category: '',
-        date: 'Oct 20, 2020',
-        views: '464,473',
-        description: 'Maroon 5 - Payphone. Easy step by step Fingerstyle Guitar Lesson.',
-        channelName: 'Fingerstyle Club',
-        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLRcs84QJnDHgry-hKQ2EdklsSph23R9CoJYtE8=s88-c-k-c0x00ffffff-no-rj'
+        date: 'May 5, 2020',
+        views: '192,603',
+        description: 'This my acoustic version of the Sweet Child O Mine Solo by Guns N Roses.',
+        channelName: 'swiftlessons',
+        channelImage: 'https://yt3.ggpht.com/ytc/AKedOLR6TAH_ntqvySTf2x_k7CWME1T7O1Q-VV7jQ8z8Kw=s88-c-k-c0x00ffffff-no-rj'
     },
 
 ]
 
-// arrOfCategories.map(item => {
-//         const category = new Category({
-//             name: item.name,
-//             image: item.img
-//         })
-
-//         category.save()
-
-//     })
 module.exports = { arrOfVideos, saveVideo }
